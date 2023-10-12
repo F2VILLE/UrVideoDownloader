@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title UrVideoDownloader
+        link(rel="stylesheet", href="/css/style.css")
+    body 
+        header 
+            h1 UrVDL
+        .main 
+            h1 UrVideoDownloader
+            p You can use a YouTube link, or a Spotify Link that will be converted to a YouTube link.
+            .form
+                input#url(type="url", name="url", placeholder="URL")
+                button#submit Download
+        script(src="/js/script.js") 
