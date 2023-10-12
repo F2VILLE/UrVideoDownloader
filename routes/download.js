@@ -19,7 +19,7 @@ router.get("/", (req, res) => {
         let videoURLs = []
 
         if (type == "sp_track") {
-            await getData(url).then(async (data) => {
+            await getData(url).then(async (data) => { 
                 await yts(`${data.title} ${data.artists[0].name}`, { limit: 1 }).then(async res => {
                     await ytdl.getBasicInfo(res.items[0].url).then(infos => {
 
